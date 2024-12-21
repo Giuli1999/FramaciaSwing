@@ -4,6 +4,8 @@
  */
 package views;
 
+import controllers.SettingsController;
+
 /**
  *
  * @author USUARIO
@@ -15,6 +17,14 @@ public class SystemView extends javax.swing.JFrame {
      */
     public SystemView() {
         initComponents();
+        setSize(1208,680);
+        setResizable(false);
+        setTitle("Panel de administración");
+        setLocationRelativeTo(null);
+        
+        //Controlador del settings
+        SettingsController setting = new SettingsController(this);
+        this.repaint();
     }
 
     /**
@@ -26,21 +36,1047 @@ public class SystemView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanel1 = new javax.swing.JPanel();
+        jPanelProducts = new javax.swing.JPanel();
+        jLabelProducts = new javax.swing.JLabel();
+        jPanelPurchases = new javax.swing.JPanel();
+        jLabelPuchases = new javax.swing.JLabel();
+        jPanelCustomers = new javax.swing.JPanel();
+        jLabelCustomers = new javax.swing.JLabel();
+        jPanelEmployees = new javax.swing.JPanel();
+        jLabelEmployees = new javax.swing.JLabel();
+        jPanelSuppliers = new javax.swing.JPanel();
+        jLabelSuppliers = new javax.swing.JLabel();
+        jPanelCategories = new javax.swing.JPanel();
+        jLabelCategories = new javax.swing.JLabel();
+        jPanelReports = new javax.swing.JPanel();
+        jLabelReports = new javax.swing.JLabel();
+        jPanelSettings = new javax.swing.JPanel();
+        jLabelSettings = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jButton1btn_photo = new javax.swing.JButton();
+        btn_lagout = new javax.swing.JButton();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txt_product_code = new javax.swing.JTextField();
+        txt_product_name = new javax.swing.JTextField();
+        txt_product_unit_price = new javax.swing.JTextField();
+        txt_product_description = new javax.swing.JTextField();
+        txt_product_id = new javax.swing.JTextField();
+        cmb_product_category = new javax.swing.JComboBox<>();
+        btn_register_product = new javax.swing.JButton();
+        btn_update_product = new javax.swing.JButton();
+        btn_delete_product = new javax.swing.JButton();
+        btn_cancel_product = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        txt_search_product = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        products_table = new javax.swing.JTable();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel13 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        txt_purchase_product_code = new javax.swing.JTextField();
+        txt_purchase_product_name = new javax.swing.JTextField();
+        txt_purchase_amount = new javax.swing.JTextField();
+        cmb_purchase_supplier = new javax.swing.JComboBox<>();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        txt_purchase_price = new javax.swing.JTextField();
+        txt_purchase_subtotal = new javax.swing.JTextField();
+        txt_purchase_id = new javax.swing.JTextField();
+        txt_purchase_total_to_pay = new javax.swing.JTextField();
+        btn_add_product_to_buy = new javax.swing.JButton();
+        btn_confirm_purchase = new javax.swing.JButton();
+        btn_remove_purchase = new javax.swing.JButton();
+        btn_new_purchase = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        purchase_table = new javax.swing.JTable();
+        jPanel7 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        txt_customer_id = new javax.swing.JTextField();
+        txt_customer_fullname = new javax.swing.JTextField();
+        txt_customer_address = new javax.swing.JTextField();
+        txt_customer_telephone = new javax.swing.JTextField();
+        txt_customer_email = new javax.swing.JTextField();
+        btn_register_Customer = new javax.swing.JButton();
+        btn_update_Customer = new javax.swing.JButton();
+        btn_delete_Customer = new javax.swing.JButton();
+        btn_cancel_Customer = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        customer_table = new javax.swing.JTable();
+        jLabel29 = new javax.swing.JLabel();
+        txt_search_customer = new javax.swing.JTextField();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        txt_employee_id = new javax.swing.JTextField();
+        txt_employee_fullname = new javax.swing.JTextField();
+        txt_employee_username = new javax.swing.JTextField();
+        txt_employee_address = new javax.swing.JTextField();
+        cmb_rol = new javax.swing.JComboBox<>();
+        txt_employee_telephone = new javax.swing.JTextField();
+        txt_employee_email = new javax.swing.JTextField();
+        btn_register_employee = new javax.swing.JButton();
+        btn_update_employee = new javax.swing.JButton();
+        btn_delete_employee = new javax.swing.JButton();
+        btn_cancel_employee = new javax.swing.JButton();
+        txt_employee_password = new javax.swing.JPasswordField();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        txt_supplier_name = new javax.swing.JTextField();
+        txt_supplier_address = new javax.swing.JTextField();
+        txt_supplier_telephone = new javax.swing.JTextField();
+        txt_supplier_email = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        txt_supplier_description = new javax.swing.JTextField();
+        txt_supplier_id = new javax.swing.JTextField();
+        cmb_supplier_city = new javax.swing.JComboBox<>();
+        btn_register_supplier = new javax.swing.JButton();
+        btn_update_supplier = new javax.swing.JButton();
+        btn_delete_supplier = new javax.swing.JButton();
+        btn_cancel_supplier = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        txt_search_supplier = new javax.swing.JTextField();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        supplier_table = new javax.swing.JTable();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel17 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        txt_category_id = new javax.swing.JTextField();
+        txt_category_name = new javax.swing.JTextField();
+        btn_register_category = new javax.swing.JButton();
+        btn_update_category = new javax.swing.JButton();
+        btn_delete_category = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        txt_search_category = new javax.swing.JTextField();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        categories_table = new javax.swing.JTable();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        table_all_purchases = new javax.swing.JTable();
+        jPanel14 = new javax.swing.JPanel();
+        jPanel18 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        txt_id_profile = new javax.swing.JTextField();
+        txt_name_profile = new javax.swing.JTextField();
+        txt_address_profile = new javax.swing.JTextField();
+        txt_phone_profile = new javax.swing.JTextField();
+        txt_email_profile = new javax.swing.JTextField();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        txt_password_modify = new javax.swing.JPasswordField();
+        txt_password_modify_confirm = new javax.swing.JPasswordField();
+        btn_modify_data = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(18, 45, 61));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanelProducts.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelProducts.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelProducts.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelProducts.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelProducts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/box.png"))); // NOI18N
+        jLabelProducts.setText("    Productos");
+        jLabelProducts.setAlignmentY(0.0F);
+        jPanelProducts.add(jLabelProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelProducts, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 35));
+
+        jPanelPurchases.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelPurchases.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelPuchases.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelPuchases.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelPuchases.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/purchase.png"))); // NOI18N
+        jLabelPuchases.setText("   Compras");
+        jPanelPurchases.add(jLabelPuchases, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelPurchases, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 35));
+
+        jPanelCustomers.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelCustomers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelCustomers.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelCustomers.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCustomers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/customer.png"))); // NOI18N
+        jLabelCustomers.setText("   Clientes");
+        jPanelCustomers.add(jLabelCustomers, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelCustomers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 200, 35));
+
+        jPanelEmployees.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelEmployees.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelEmployees.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelEmployees.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelEmployees.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/employee.png"))); // NOI18N
+        jLabelEmployees.setText("   Empleados");
+        jPanelEmployees.add(jLabelEmployees, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelEmployees, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 200, 35));
+
+        jPanelSuppliers.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelSuppliers.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelSuppliers.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelSuppliers.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelSuppliers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/supplier.png"))); // NOI18N
+        jLabelSuppliers.setText("   Proveedores");
+        jPanelSuppliers.add(jLabelSuppliers, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelSuppliers, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 200, 35));
+
+        jPanelCategories.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelCategories.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelCategories.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelCategories.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCategories.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/categories.png"))); // NOI18N
+        jLabelCategories.setText("   Categorías");
+        jPanelCategories.add(jLabelCategories, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelCategories, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 200, 35));
+
+        jPanelReports.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelReports.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelReports.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelReports.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelReports.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/business-report.png"))); // NOI18N
+        jLabelReports.setText("   Reportes");
+        jPanelReports.add(jLabelReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 200, 35));
+
+        jPanelSettings.setBackground(new java.awt.Color(18, 45, 61));
+        jPanelSettings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelSettings.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabelSettings.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelSettings.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabelSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/settings.png"))); // NOI18N
+        jLabelSettings.setText("   Configuraciones");
+        jPanelSettings.add(jLabelSettings, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+
+        jPanel1.add(jPanelSettings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 200, 35));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 200, 580));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/farmacia.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 100));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 100));
+
+        jPanel3.setBackground(new java.awt.Color(18, 45, 61));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("FARMACIA VIDA NATURAL");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 25, 340, 50));
+
+        jButton1btn_photo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/man.png"))); // NOI18N
+        jPanel3.add(jButton1btn_photo, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 80, 65));
+
+        btn_lagout.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btn_lagout.setText("Salir");
+        btn_lagout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_lagoutActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btn_lagout, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 35, -1, 30));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1010, 100));
+
+        jPanel4.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Productos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setText("Código:");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        jPanel12.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setText("Nombre:");
+        jPanel12.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setText("Precio de venta:");
+        jPanel12.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setText("Descripción:");
+        jPanel12.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setText("Categoría:");
+        jPanel12.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setText("Id:");
+        jPanel12.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, -1, -1));
+
+        txt_product_code.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel12.add(txt_product_code, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 165, 30));
+
+        txt_product_name.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel12.add(txt_product_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 165, 30));
+
+        txt_product_unit_price.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel12.add(txt_product_unit_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 165, 30));
+
+        txt_product_description.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel12.add(txt_product_description, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 165, 30));
+
+        txt_product_id.setEditable(false);
+        txt_product_id.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txt_product_id.setEnabled(false);
+        txt_product_id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_product_idActionPerformed(evt);
+            }
+        });
+        jPanel12.add(txt_product_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 165, 30));
+
+        cmb_product_category.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel12.add(cmb_product_category, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 165, 30));
+
+        btn_register_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_register_product.setText("Registrar");
+        btn_register_product.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_register_productActionPerformed(evt);
+            }
+        });
+        jPanel12.add(btn_register_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 50, 105, 30));
+
+        btn_update_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_update_product.setText("Modificar");
+        jPanel12.add(btn_update_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, 105, 30));
+
+        btn_delete_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_delete_product.setText("Eliminar");
+        jPanel12.add(btn_delete_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 130, 105, 30));
+
+        btn_cancel_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_cancel_product.setText("Cancelar");
+        jPanel12.add(btn_cancel_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, 105, 30));
+
+        jPanel4.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 920, 270));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setText("Buscar");
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, -1, -1));
+
+        txt_search_product.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel4.add(txt_search_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 160, 30));
+
+        products_table.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        products_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Id", "Código", "Nombre", "Descripción", "Precio de venta", "Cantidad", "Categoria"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(products_table);
+        if (products_table.getColumnModel().getColumnCount() > 0) {
+            products_table.getColumnModel().getColumn(0).setResizable(false);
+            products_table.getColumnModel().getColumn(1).setResizable(false);
+            products_table.getColumnModel().getColumn(2).setResizable(false);
+            products_table.getColumnModel().getColumn(3).setResizable(false);
+            products_table.getColumnModel().getColumn(4).setResizable(false);
+            products_table.getColumnModel().getColumn(5).setResizable(false);
+            products_table.getColumnModel().getColumn(6).setResizable(false);
+        }
+
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 910, 90));
+
+        jTabbedPane1.addTab("Productos", jPanel4);
+
+        jPanel5.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel13.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nueva Compra", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setText("Código del producto:");
+        jPanel13.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel11.setText("Nombre del producto:");
+        jPanel13.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel12.setText("Cantidad:");
+        jPanel13.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel13.setText("Proveedor:");
+        jPanel13.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
+
+        txt_purchase_product_code.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txt_purchase_product_code.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_purchase_product_codeActionPerformed(evt);
+            }
+        });
+        jPanel13.add(txt_purchase_product_code, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 165, 30));
+
+        txt_purchase_product_name.setEditable(false);
+        txt_purchase_product_name.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel13.add(txt_purchase_product_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 165, 30));
+
+        txt_purchase_amount.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel13.add(txt_purchase_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 165, 30));
+
+        cmb_purchase_supplier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel13.add(cmb_purchase_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 165, 30));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel14.setText("Precio de compra:");
+        jPanel13.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel15.setText("Subtotal:");
+        jPanel13.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel16.setText("Id:");
+        jPanel13.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel17.setText("Total a pagar:");
+        jPanel13.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, -1, -1));
+
+        txt_purchase_price.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel13.add(txt_purchase_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 165, 30));
+
+        txt_purchase_subtotal.setEditable(false);
+        txt_purchase_subtotal.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel13.add(txt_purchase_subtotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 165, 30));
+
+        txt_purchase_id.setEditable(false);
+        txt_purchase_id.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        txt_purchase_id.setEnabled(false);
+        jPanel13.add(txt_purchase_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 165, 30));
+
+        txt_purchase_total_to_pay.setEditable(false);
+        txt_purchase_total_to_pay.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel13.add(txt_purchase_total_to_pay, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, 165, 30));
+
+        btn_add_product_to_buy.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_add_product_to_buy.setText("Agregar");
+        jPanel13.add(btn_add_product_to_buy, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 50, 105, 30));
+
+        btn_confirm_purchase.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_confirm_purchase.setText("Comprar");
+        jPanel13.add(btn_confirm_purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 100, 105, 30));
+
+        btn_remove_purchase.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_remove_purchase.setText("Eliminar");
+        jPanel13.add(btn_remove_purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 150, 105, 30));
+
+        btn_new_purchase.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_new_purchase.setText("Nuevo");
+        jPanel13.add(btn_new_purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 200, 105, 30));
+
+        jPanel5.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 920, 310));
+
+        purchase_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Id", "Nombre_del_producto", "Cantidad", "Precio", "Subtotal", "Proveedor"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane2.setViewportView(purchase_table);
+
+        jPanel5.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 920, 130));
+
+        jTabbedPane1.addTab("Compras", jPanel5);
+
+        jPanel7.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Clientes", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel24.setText("Identificación:");
+        jPanel15.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel25.setText("Nombre completo:");
+        jPanel15.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel26.setText("Dirección:");
+        jPanel15.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel27.setText("Teléfono:");
+        jPanel15.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel28.setText("Correo:");
+        jPanel15.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 100, -1, -1));
+        jPanel15.add(txt_customer_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 165, 30));
+
+        txt_customer_fullname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_customer_fullnameActionPerformed(evt);
+            }
+        });
+        jPanel15.add(txt_customer_fullname, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 165, 30));
+
+        txt_customer_address.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_customer_addressActionPerformed(evt);
+            }
+        });
+        jPanel15.add(txt_customer_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 165, 30));
+        jPanel15.add(txt_customer_telephone, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 165, 30));
+        jPanel15.add(txt_customer_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 165, 30));
+
+        btn_register_Customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_register_Customer.setText("Registrar");
+        jPanel15.add(btn_register_Customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, 105, 30));
+
+        btn_update_Customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_update_Customer.setText("Modificar");
+        jPanel15.add(btn_update_Customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 80, 105, 30));
+
+        btn_delete_Customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_delete_Customer.setText("Eliminar");
+        jPanel15.add(btn_delete_Customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 120, 105, 30));
+
+        btn_cancel_Customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_cancel_Customer.setText("Cancelar");
+        jPanel15.add(btn_cancel_Customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 160, 105, 30));
+
+        jPanel7.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 920, 270));
+
+        customer_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Identificación", "Nombre", "Teléfono", "Dirección", "Correo"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(customer_table);
+
+        jPanel7.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 910, 120));
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel29.setText("Buscar:");
+        jPanel7.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
+
+        txt_search_customer.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jPanel7.add(txt_search_customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 160, 30));
+
+        jTabbedPane1.addTab("Clientes", jPanel7);
+
+        jPanel8.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Empleados", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel18.setText("Identificación:");
+        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel19.setText("Nombre completo:");
+        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel20.setText("Nombre de usuario:");
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel21.setText("Rol:");
+        jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel22.setText("Dirección:");
+        jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 50, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel23.setText("Telefono:");
+        jPanel6.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel30.setText("Correo:");
+        jPanel6.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel31.setText("Contraseña:");
+        jPanel6.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, -1, -1));
+        jPanel6.add(txt_employee_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 165, 30));
+        jPanel6.add(txt_employee_fullname, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 165, 30));
+        jPanel6.add(txt_employee_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 165, 30));
+
+        txt_employee_address.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_employee_addressActionPerformed(evt);
+            }
+        });
+        jPanel6.add(txt_employee_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 165, 30));
+
+        cmb_rol.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Auxiliar" }));
+        jPanel6.add(cmb_rol, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 165, 30));
+        jPanel6.add(txt_employee_telephone, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 165, 30));
+        jPanel6.add(txt_employee_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 165, 30));
+
+        btn_register_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_register_employee.setText("Registrar");
+        jPanel6.add(btn_register_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 60, 105, 30));
+
+        btn_update_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_update_employee.setText("Modificar:");
+        jPanel6.add(btn_update_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 100, 105, 30));
+
+        btn_delete_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_delete_employee.setText("Eliminar:");
+        btn_delete_employee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_delete_employeeActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btn_delete_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 140, 105, 30));
+
+        btn_cancel_employee.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_cancel_employee.setText("Cancelar:");
+        jPanel6.add(btn_cancel_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 180, 105, 30));
+
+        txt_employee_password.setText("jPasswordField1");
+        jPanel6.add(txt_employee_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 165, 30));
+
+        jPanel8.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 920, 300));
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel32.setText("Buscar:");
+        jPanel8.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
+        jPanel8.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 160, 30));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Identificación", "Nombre", "Nombre de usuario", "Dirección", "Telefono", "Correo", "Rol"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, true, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(jTable1);
+
+        jPanel8.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 910, 120));
+
+        jTabbedPane1.addTab("Empleados", jPanel8);
+
+        jPanel9.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Proveedores", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel33.setText("Nombre:");
+        jPanel16.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel34.setText("Dirección:");
+        jPanel16.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel35.setText("Teléfono:");
+        jPanel16.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel36.setText("Correo:");
+        jPanel16.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+        jPanel16.add(txt_supplier_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 165, 30));
+        jPanel16.add(txt_supplier_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 165, 30));
+        jPanel16.add(txt_supplier_telephone, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 165, 30));
+        jPanel16.add(txt_supplier_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 165, 30));
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel37.setText("Descripción:");
+        jPanel16.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, -1, -1));
+
+        jLabel38.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel38.setText("Ciudad:");
+        jPanel16.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, -1, -1));
+
+        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel39.setText("Id:");
+        jPanel16.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, -1, -1));
+        jPanel16.add(txt_supplier_description, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, 165, 30));
+        jPanel16.add(txt_supplier_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 165, 30));
+
+        cmb_supplier_city.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bogota", "Barranquilla", "Cali", "Medellín" }));
+        jPanel16.add(cmb_supplier_city, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 165, 30));
+
+        btn_register_supplier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_register_supplier.setText("Registrar");
+        jPanel16.add(btn_register_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, 105, 30));
+
+        btn_update_supplier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_update_supplier.setText("Modificar");
+        btn_update_supplier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_update_supplierActionPerformed(evt);
+            }
+        });
+        jPanel16.add(btn_update_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 70, 105, 30));
+
+        btn_delete_supplier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_delete_supplier.setText("Eliminar");
+        jPanel16.add(btn_delete_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 110, 105, 30));
+
+        btn_cancel_supplier.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_cancel_supplier.setText("Cancelar");
+        jPanel16.add(btn_cancel_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, 105, 30));
+
+        jPanel9.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 920, 270));
+
+        jLabel40.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel40.setText("Buscar:");
+        jPanel9.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, -1, -1));
+        jPanel9.add(txt_search_supplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 160, 30));
+
+        supplier_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Id", "Nombre", "Descripción", "Dirección", "Teléfono", "Correo", "Ciudad"
+            }
+        ));
+        jScrollPane5.setViewportView(supplier_table);
+
+        jPanel9.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 910, 120));
+
+        jTabbedPane1.addTab("Proveedores", jPanel9);
+
+        jPanel10.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel17.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Categorias", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel41.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel41.setText("Id:");
+        jPanel17.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel42.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel42.setText("Nombre:");
+        jPanel17.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        txt_category_id.setEditable(false);
+        txt_category_id.setEnabled(false);
+        jPanel17.add(txt_category_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 165, 30));
+
+        txt_category_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_category_nameActionPerformed(evt);
+            }
+        });
+        jPanel17.add(txt_category_name, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 165, 30));
+
+        btn_register_category.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_register_category.setText("Registrar");
+        btn_register_category.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_register_categoryActionPerformed(evt);
+            }
+        });
+        jPanel17.add(btn_register_category, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 105, 30));
+
+        btn_update_category.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_update_category.setText("Modificar");
+        btn_update_category.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_update_categoryActionPerformed(evt);
+            }
+        });
+        jPanel17.add(btn_update_category, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 105, 30));
+
+        btn_delete_category.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_delete_category.setText("Eliminar");
+        jPanel17.add(btn_delete_category, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, 105, 30));
+
+        jPanel10.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 520, 270));
+
+        jLabel43.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel43.setText("Buscar:");
+        jPanel10.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, -1, -1));
+        jPanel10.add(txt_search_category, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 290, 30));
+
+        categories_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Id", "Nombre"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane6.setViewportView(categories_table);
+
+        jPanel10.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 60, 350, 230));
+
+        jTabbedPane1.addTab("Categorias", jPanel10);
+
+        jPanel11.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel44.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel44.setText("COMPRAS REALIZADAS");
+        jPanel11.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, -1, -1));
+
+        table_all_purchases.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Factura", "Proveedor", "Total", "Fecha de compra"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, true, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane7.setViewportView(table_all_purchases);
+
+        jPanel11.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 810, 130));
+
+        jTabbedPane1.addTab("Reportes", jPanel11);
+
+        jPanel14.setBackground(new java.awt.Color(152, 202, 63));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel18.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Editar perfil", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel45.setText("Identificación:");
+        jPanel18.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
+
+        jLabel46.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel46.setText("Nombre completo:");
+        jPanel18.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
+
+        jLabel47.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel47.setText("Dirección:");
+        jPanel18.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+
+        jLabel48.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel48.setText("Teléfono:");
+        jPanel18.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+
+        jLabel49.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel49.setText("Correo:");
+        jPanel18.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, -1));
+
+        txt_id_profile.setEditable(false);
+        jPanel18.add(txt_id_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 165, 30));
+
+        txt_name_profile.setEditable(false);
+        jPanel18.add(txt_name_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 165, 30));
+
+        txt_address_profile.setEditable(false);
+        jPanel18.add(txt_address_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 165, 30));
+
+        txt_phone_profile.setEditable(false);
+        txt_phone_profile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_phone_profileActionPerformed(evt);
+            }
+        });
+        jPanel18.add(txt_phone_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 165, 30));
+
+        txt_email_profile.setEditable(false);
+        jPanel18.add(txt_email_profile, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 165, 30));
+
+        jLabel50.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel50.setText("Nueva contraseña:");
+        jPanel18.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, -1, -1));
+
+        jLabel51.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel51.setText("Confirmar contraseña:");
+        jPanel18.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, -1, -1));
+        jPanel18.add(txt_password_modify, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 165, 30));
+        jPanel18.add(txt_password_modify_confirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 165, 30));
+
+        btn_modify_data.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_modify_data.setText("Modificar");
+        jPanel18.add(btn_modify_data, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, -1, -1));
+
+        jPanel14.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 20, 920, 390));
+
+        jTabbedPane1.addTab("Perfil", jPanel14);
+
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 1010, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_lagoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lagoutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_lagoutActionPerformed
+
+    private void btn_register_productActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_register_productActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_register_productActionPerformed
+
+    private void txt_product_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_product_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_product_idActionPerformed
+
+    private void txt_purchase_product_codeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_purchase_product_codeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_purchase_product_codeActionPerformed
+
+    private void txt_customer_fullnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_customer_fullnameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_customer_fullnameActionPerformed
+
+    private void txt_customer_addressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_customer_addressActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_customer_addressActionPerformed
+
+    private void btn_delete_employeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_delete_employeeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_delete_employeeActionPerformed
+
+    private void txt_employee_addressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_employee_addressActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_employee_addressActionPerformed
+
+    private void btn_update_supplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_update_supplierActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_update_supplierActionPerformed
+
+    private void txt_category_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_category_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_category_nameActionPerformed
+
+    private void btn_register_categoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_register_categoryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_register_categoryActionPerformed
+
+    private void btn_update_categoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_update_categoryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_update_categoryActionPerformed
+
+    private void txt_phone_profileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_phone_profileActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_phone_profileActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +1114,179 @@ public class SystemView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btn_add_product_to_buy;
+    public javax.swing.JButton btn_cancel_Customer;
+    public javax.swing.JButton btn_cancel_employee;
+    public javax.swing.JButton btn_cancel_product;
+    public javax.swing.JButton btn_cancel_supplier;
+    public javax.swing.JButton btn_confirm_purchase;
+    public javax.swing.JButton btn_delete_Customer;
+    public javax.swing.JButton btn_delete_category;
+    public javax.swing.JButton btn_delete_employee;
+    public javax.swing.JButton btn_delete_product;
+    public javax.swing.JButton btn_delete_supplier;
+    private javax.swing.JButton btn_lagout;
+    private javax.swing.JButton btn_modify_data;
+    public javax.swing.JButton btn_new_purchase;
+    public javax.swing.JButton btn_register_Customer;
+    public javax.swing.JButton btn_register_category;
+    public javax.swing.JButton btn_register_employee;
+    public javax.swing.JButton btn_register_product;
+    public javax.swing.JButton btn_register_supplier;
+    public javax.swing.JButton btn_remove_purchase;
+    public javax.swing.JButton btn_update_Customer;
+    public javax.swing.JButton btn_update_category;
+    public javax.swing.JButton btn_update_employee;
+    public javax.swing.JButton btn_update_product;
+    public javax.swing.JButton btn_update_supplier;
+    public javax.swing.JTable categories_table;
+    public javax.swing.JComboBox<Object> cmb_product_category;
+    public javax.swing.JComboBox<String> cmb_purchase_supplier;
+    public javax.swing.JComboBox<String> cmb_rol;
+    public javax.swing.JComboBox<String> cmb_supplier_city;
+    public javax.swing.JTable customer_table;
+    private javax.swing.JButton jButton1btn_photo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    public javax.swing.JLabel jLabelCategories;
+    public javax.swing.JLabel jLabelCustomers;
+    public javax.swing.JLabel jLabelEmployees;
+    public javax.swing.JLabel jLabelProducts;
+    public javax.swing.JLabel jLabelPuchases;
+    public javax.swing.JLabel jLabelReports;
+    public javax.swing.JLabel jLabelSettings;
+    public javax.swing.JLabel jLabelSuppliers;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    public javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    public javax.swing.JPanel jPanelCategories;
+    public javax.swing.JPanel jPanelCustomers;
+    public javax.swing.JPanel jPanelEmployees;
+    public javax.swing.JPanel jPanelProducts;
+    public javax.swing.JPanel jPanelPurchases;
+    public javax.swing.JPanel jPanelReports;
+    public javax.swing.JPanel jPanelSettings;
+    public javax.swing.JPanel jPanelSuppliers;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    public javax.swing.JTable jTable1;
+    public javax.swing.JTextField jTextField1;
+    public javax.swing.JTable products_table;
+    public javax.swing.JTable purchase_table;
+    public javax.swing.JTable supplier_table;
+    private javax.swing.JTable table_all_purchases;
+    private javax.swing.JTextField txt_address_profile;
+    public javax.swing.JTextField txt_category_id;
+    public javax.swing.JTextField txt_category_name;
+    public javax.swing.JTextField txt_customer_address;
+    public javax.swing.JTextField txt_customer_email;
+    public javax.swing.JTextField txt_customer_fullname;
+    public javax.swing.JTextField txt_customer_id;
+    public javax.swing.JTextField txt_customer_telephone;
+    private javax.swing.JTextField txt_email_profile;
+    public javax.swing.JTextField txt_employee_address;
+    public javax.swing.JTextField txt_employee_email;
+    public javax.swing.JTextField txt_employee_fullname;
+    public javax.swing.JTextField txt_employee_id;
+    public javax.swing.JPasswordField txt_employee_password;
+    public javax.swing.JTextField txt_employee_telephone;
+    public javax.swing.JTextField txt_employee_username;
+    private javax.swing.JTextField txt_id_profile;
+    private javax.swing.JTextField txt_name_profile;
+    private javax.swing.JPasswordField txt_password_modify;
+    private javax.swing.JPasswordField txt_password_modify_confirm;
+    private javax.swing.JTextField txt_phone_profile;
+    public javax.swing.JTextField txt_product_code;
+    public javax.swing.JTextField txt_product_description;
+    public javax.swing.JTextField txt_product_id;
+    public javax.swing.JTextField txt_product_name;
+    public javax.swing.JTextField txt_product_unit_price;
+    public javax.swing.JTextField txt_purchase_amount;
+    public javax.swing.JTextField txt_purchase_id;
+    public javax.swing.JTextField txt_purchase_price;
+    public javax.swing.JTextField txt_purchase_product_code;
+    public javax.swing.JTextField txt_purchase_product_name;
+    public javax.swing.JTextField txt_purchase_subtotal;
+    public javax.swing.JTextField txt_purchase_total_to_pay;
+    public javax.swing.JTextField txt_search_category;
+    public javax.swing.JTextField txt_search_customer;
+    public javax.swing.JTextField txt_search_product;
+    public javax.swing.JTextField txt_search_supplier;
+    public javax.swing.JTextField txt_supplier_address;
+    public javax.swing.JTextField txt_supplier_description;
+    public javax.swing.JTextField txt_supplier_email;
+    public javax.swing.JTextField txt_supplier_id;
+    public javax.swing.JTextField txt_supplier_name;
+    public javax.swing.JTextField txt_supplier_telephone;
     // End of variables declaration//GEN-END:variables
 }
